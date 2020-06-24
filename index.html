@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Image range</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <div class="controllers">
+        <h2 class="h2">Photo filter</h2>
+        <label for="base">Background color:</label>
+        <input type="color" id="base" value="#008C8C" />
+        <br />
+        <label for="size">Size of photo:</label>
+        <input
+          type="range"
+          id="size"
+          min="20"
+          max="90"
+          value="50"
+          data-sizing="%"
+        />
+        <br />
+        <label for="blur">Blur:</label>
+        <input
+          type="range"
+          id="blur"
+          min="0"
+          max="6"
+          value="0"
+          data-sizing="px"
+        />
+        <br />
+        <label for="invers">Inversion:</label>
+        <input
+          type="range"
+          id="invers"
+          min="0"
+          max="100"
+          value="0"
+          data-sizing="%"
+        />
+        <br />
+        <label for="sepia">Sepia:</label>
+        <input
+          type="range"
+          id="sepia"
+          min="0"
+          max="100"
+          value="0"
+          data-sizing="%"
+        />
+        <br />
+        <label for="saturation">Saturation:</label>
+        <input
+          type="range"
+          id="saturation"
+          min="0"
+          max="100"
+          value="0"
+          data-sizing="%"
+        />
+        <br />
+        <label for="hue-rotate">Hue-rotate:</label>
+        <input
+          type="range"
+          id="hue-rotate"
+          min="0"
+          max="360"
+          value="0"
+          data-sizing="deg"
+        />
+        <br />
+      </div>
+      <div class="image">
+        <img
+          src="img/Thomas-P-Murphy-Studio-Building-by-Arquitectonica-00.jpg"
+          alt="modern house"
+          class="img"
+        />
+      </div>
+    </div>
+
+    <script src="index.js"></script>
+  </body>
+</html>
